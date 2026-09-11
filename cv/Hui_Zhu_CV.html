@@ -10,13 +10,14 @@
       margin: 0;
       color: #18211d;
       font-family: Arial, Helvetica, sans-serif;
-      font-size: 8.5pt;
-      line-height: 1.22;
+      font-size: 9.8pt;
+      line-height: 1.24;
     }
     a { color: #365f8c; text-decoration: none; }
     .page { position: relative; }
     .page-break { break-before: page; page-break-before: always; }
     .page-break-after { break-after: page; page-break-after: always; }
+    .print-spacer { height: auto; }
     header {
       display: grid;
       grid-template-columns: 1fr auto;
@@ -26,23 +27,23 @@
     }
     h1 { margin: 0; font-size: 25pt; line-height: 1; letter-spacing: -0.8pt; }
     .role { margin: 4px 0 0; color: #365f8c; font-size: 10pt; font-weight: bold; }
-    .contact { text-align: right; font-size: 8pt; line-height: 1.3; }
+    .contact { text-align: right; font-size: 8.8pt; line-height: 1.3; }
     .summary {
       margin: 0.1in 0 0.09in;
       padding: 0.08in 0.1in;
       background: #eef2f6;
-      font-size: 8.8pt;
+      font-size: 9.8pt;
     }
     .summary strong { color: #284c73; }
     h2 {
       margin: 0.1in 0 0.05in;
       color: #284c73;
-      font-size: 9.5pt;
+      font-size: 10.4pt;
       line-height: 1;
       letter-spacing: 1.25pt;
       text-transform: uppercase;
     }
-    h3 { margin: 0; font-size: 9pt; }
+    h3 { margin: 0; font-size: 10.1pt; }
     p { margin: 0; }
     .subtle { color: #5d6862; }
     .row { display: grid; grid-template-columns: 1fr auto; gap: 0.2in; align-items: baseline; }
@@ -56,8 +57,8 @@
     .strengths { width: 100%; border-collapse: collapse; border-block: 1px solid #cbd3d8; }
     .strengths td { width: 25%; padding: 0.05in 0.07in; border-right: 1px solid #cbd3d8; }
     .strengths td:last-child { border-right: 0; }
-    .strengths span { display: block; color: #6a756f; font-size: 7.4pt; letter-spacing: 0.6pt; text-transform: uppercase; }
-    .strengths strong { display: block; margin-top: 2px; font-size: 8.7pt; }
+    .strengths span { display: block; color: #6a756f; font-size: 8.3pt; letter-spacing: 0.6pt; text-transform: uppercase; }
+    .strengths strong { display: block; margin-top: 2px; font-size: 9.5pt; }
     .project-grid { width: 100%; border-collapse: separate; border-spacing: 0.07in; margin: -0.07in; }
     .project-grid td { width: 50%; vertical-align: top; }
     .project {
@@ -81,14 +82,16 @@
       top: 1px;
       color: #365f8c;
       content: counter(pubs, decimal-leading-zero);
-      font-size: 7.7pt;
+      font-size: 8.5pt;
       font-weight: bold;
     }
     .pub-title { font-weight: bold; }
     .pub-venue { color: #365f8c; font-weight: bold; }
     .skill-table { width: 100%; border-collapse: collapse; }
     .skill-table td { padding: 3px 0; border-bottom: 1px solid #d7ddda; vertical-align: top; }
-    .skill-table td:first-child { width: 1.25in; color: #365f8c; font-size: 8pt; font-weight: bold; text-transform: uppercase; }
+    .skill-table td:first-child { width: 1.25in; color: #365f8c; font-size: 8.8pt; font-weight: bold; text-transform: uppercase; }
+    .skill-list p { margin: 0 0 5px; }
+    .skill-list strong { color: #365f8c; }
     .footer {
       margin-top: 0.09in;
       padding-top: 4px;
@@ -114,7 +117,7 @@
     </header>
 
     <section class="summary">
-      Computer Science Ph.D. researcher building <strong>multimodal vision systems and trustworthy AI methods</strong>. Published at WACV and ECAI, with hands-on experience in 2D/3D segmentation, vision-language fusion, foundation-model adaptation, and LLM privacy evaluation. Skilled at taking research from data pipeline and experiment design through multi-GPU evaluation and publication.
+      Computer Science Ph.D. researcher building <strong>multimodal vision systems and trustworthy AI methods</strong>. Published at WACV and ECAI, with hands-on experience in 2D/3D segmentation, vision-language fusion, foundation-model adaptation, and LLM privacy evaluation. Skilled at taking research from data pipelines and experimental design through multi-GPU evaluation and publication.
     </section>
 
     <table class="strengths" aria-label="Core strengths"><tr>
@@ -160,6 +163,7 @@
     <div class="footer page-break-after">Hui Zhu · Curriculum Vitae · 1 / 2</div>
   </main>
 
+  <div class="print-spacer" aria-hidden="true">&nbsp;<br><br><br><br></div>
   <main class="page">
     <section>
       <h2>Publications &amp; Preprints · Newest First</h2>
@@ -174,7 +178,7 @@
     </section>
 
     <section>
-      <h2>Teaching &amp; Leadership</h2>
+      <h2>Teaching &amp; Mentorship</h2>
       <div class="entry">
         <table class="entry-head"><tr><td><h3>Teaching Assistant / Project Instructor · CSC 4996 Capstone Projects</h3></td><td>Jan 2024—Present</td></tr></table>
         <p class="subtle">Wayne State University</p>
@@ -183,22 +187,16 @@
           <li>Supported projects spanning image analysis, compliance auditing, generative audio, voice interfaces, autonomous systems, and mobile applications.</li>
         </ul>
       </div>
-      <div class="entry">
-        <table class="entry-head"><tr><td><h3>Algorithm Analysis Team Lead</h3></td><td>May 2022</td></tr></table>
-        <ul><li>Coordinated literature review, code reproduction, parameter studies, experiment monitoring, and team progress.</li></ul>
-      </div>
     </section>
 
     <section>
       <h2>Technical Toolkit</h2>
-      <table class="skill-table">
-        <tr><td>Programming</td><td>Python, C/C++, Bash, SQL, LaTeX</td></tr>
-        <tr><td>ML &amp; data</td><td>PyTorch, MONAI, Hugging Face Transformers, scikit-learn, NumPy, SciPy, pandas</td></tr>
-        <tr><td>Vision</td><td>U-Net, ResNet/CNNs, Vision Transformers, Swin-UNETR, SAM fine-tuning, vision-language and multimodal learning</td></tr>
-        <tr><td>Imaging</td><td>2D/3D segmentation, CT/MR and microscopy workflows, DICOM/NIfTI, OpenCV, scikit-image</td></tr>
-        <tr><td>Evaluation</td><td>Dice, IoU, boundary metrics, ROC/AUC, cross-validation, ablation design, calibration, uncertainty estimation</td></tr>
-        <tr><td>Engineering</td><td>Linux, Git/GitHub, Docker, CUDA, multi-GPU training, HPC scheduling, Conda, reproducible experiment tracking</td></tr>
-      </table>
+      <div class="skill-list">
+        <p><strong>Programming &amp; systems:</strong> Python, C/C++, Bash, SQL, LaTeX, Linux, Git/GitHub, Docker, CUDA, multi-GPU/HPC, Conda</p>
+        <p><strong>ML stack:</strong> PyTorch, MONAI, Hugging Face Transformers, scikit-learn, NumPy/SciPy, pandas, reproducible experiment tracking</p>
+        <p><strong>Vision &amp; imaging:</strong> U-Net, CNN/ResNet, Vision Transformers, Swin-UNETR, SAM; 2D/3D CT/MR and microscopy; DICOM/NIfTI, OpenCV, scikit-image</p>
+        <p><strong>Evaluation:</strong> Dice, IoU, boundary metrics, ROC/AUC, cross-validation, ablation design, calibration, uncertainty estimation</p>
+      </div>
     </section>
 
   </main>
