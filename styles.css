@@ -8,8 +8,8 @@
   --muted: #69716c;
   --line: rgba(23, 32, 28, .16);
   --line-strong: rgba(23, 32, 28, .32);
-  --accent: #ee6247;
-  --accent-bright: #ff795b;
+  --accent: #3f638c;
+  --accent-bright: #7297c1;
   --moss: #2d493d;
   --dark: #15211c;
   --display: "Manrope", system-ui, sans-serif;
@@ -139,9 +139,9 @@ svg { display: block; }
 .eyebrow span { width: 32px; height: 1px; background: var(--accent); }
 h1, h2, h3, p { margin-top: 0; }
 h1 {
-  max-width: 780px;
+  max-width: 720px;
   margin-bottom: 1.8rem;
-  font-size: clamp(3.3rem, 6vw, 6.5rem);
+  font-size: clamp(2.9rem, 4.8vw, 5rem);
   font-weight: 500;
   line-height: .98;
   letter-spacing: -.07em;
@@ -420,7 +420,7 @@ h2 { margin-bottom: 0; font-size: clamp(2.3rem, 4.5vw, 4.5rem); line-height: 1.0
   .wordmark > span:last-child { display: none; }
   .nav-cv { display: none; }
   .hero { padding: 110px 0 70px; }
-  h1 { font-size: clamp(3rem, 16vw, 4.7rem); }
+  h1 { font-size: clamp(2.75rem, 12vw, 3.55rem); }
   .hero-meta { align-items: flex-start; flex-direction: column; gap: .4rem; }
   .meta-rule { display: none; }
   .floating-note { display: none; }
