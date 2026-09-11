@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hui Zhu — Curriculum Vitae</title>
+  <style>
+    @page { size: Letter; margin: 0.36in 0.44in; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: #18211d;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 8.5pt;
+      line-height: 1.22;
+    }
+    a { color: #365f8c; text-decoration: none; }
+    .page { position: relative; }
+    .page-break { break-before: page; page-break-before: always; }
+    .page-break-after { break-after: page; page-break-after: always; }
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 0.3in;
+      padding-bottom: 0.09in;
+      border-bottom: 2px solid #365f8c;
+    }
+    h1 { margin: 0; font-size: 25pt; line-height: 1; letter-spacing: -0.8pt; }
+    .role { margin: 4px 0 0; color: #365f8c; font-size: 10pt; font-weight: bold; }
+    .contact { text-align: right; font-size: 8pt; line-height: 1.3; }
+    .summary {
+      margin: 0.1in 0 0.09in;
+      padding: 0.08in 0.1in;
+      background: #eef2f6;
+      font-size: 8.8pt;
+    }
+    .summary strong { color: #284c73; }
+    h2 {
+      margin: 0.1in 0 0.05in;
+      color: #284c73;
+      font-size: 9.5pt;
+      line-height: 1;
+      letter-spacing: 1.25pt;
+      text-transform: uppercase;
+    }
+    h3 { margin: 0; font-size: 9pt; }
+    p { margin: 0; }
+    .subtle { color: #5d6862; }
+    .row { display: grid; grid-template-columns: 1fr auto; gap: 0.2in; align-items: baseline; }
+    .entry-head { width: 100%; border-collapse: collapse; }
+    .entry-head td { padding: 0; vertical-align: top; }
+    .entry-head td:last-child { width: 1.3in; text-align: right; white-space: nowrap; font-weight: bold; }
+    .entry { margin-bottom: 0.06in; }
+    .entry:last-child { margin-bottom: 0; }
+    ul { margin: 3px 0 0; padding-left: 14px; }
+    li { margin: 0 0 1px; padding-left: 1px; }
+    .strengths { width: 100%; border-collapse: collapse; border-block: 1px solid #cbd3d8; }
+    .strengths td { width: 25%; padding: 0.05in 0.07in; border-right: 1px solid #cbd3d8; }
+    .strengths td:last-child { border-right: 0; }
+    .strengths span { display: block; color: #6a756f; font-size: 7.4pt; letter-spacing: 0.6pt; text-transform: uppercase; }
+    .strengths strong { display: block; margin-top: 2px; font-size: 8.7pt; }
+    .project-grid { width: 100%; border-collapse: separate; border-spacing: 0.07in; margin: -0.07in; }
+    .project-grid td { width: 50%; vertical-align: top; }
+    .project {
+      padding: 0.06in 0.08in;
+      border-left: 3px solid #7694b4;
+      background: #f6f7f7;
+    }
+    .project .meta { margin-bottom: 3px; color: #365f8c; font-size: 7.6pt; font-weight: bold; text-transform: uppercase; }
+    .project p { margin-top: 2px; color: #4e5953; font-size: 7.8pt; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0.2in; }
+    .pub-list { margin: 0; padding: 0; list-style: none; counter-reset: pubs; }
+    .pub-list li {
+      position: relative;
+      margin-bottom: 0.07in;
+      padding-left: 0.29in;
+      counter-increment: pubs;
+    }
+    .pub-list li::before {
+      position: absolute;
+      left: 0;
+      top: 1px;
+      color: #365f8c;
+      content: counter(pubs, decimal-leading-zero);
+      font-size: 7.7pt;
+      font-weight: bold;
+    }
+    .pub-title { font-weight: bold; }
+    .pub-venue { color: #365f8c; font-weight: bold; }
+    .skill-table { width: 100%; border-collapse: collapse; }
+    .skill-table td { padding: 3px 0; border-bottom: 1px solid #d7ddda; vertical-align: top; }
+    .skill-table td:first-child { width: 1.25in; color: #365f8c; font-size: 8pt; font-weight: bold; text-transform: uppercase; }
+    .footer {
+      margin-top: 0.09in;
+      padding-top: 4px;
+      border-top: 1px solid #d7ddda;
+      color: #7b847f;
+      font-size: 7.4pt;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div>
+        <h1>Hui Zhu</h1>
+        <p class="role">Computer Vision &amp; Trustworthy AI Researcher</p>
+      </div>
+      <div class="contact">
+        Detroit, Michigan · (+1) 607-953-1826<br>
+        <a href="mailto:hui@wayne.edu">hui@wayne.edu</a> · <a href="https://github.com/Dahuia">github.com/Dahuia</a><br>
+        <a href="https://www.linkedin.com/in/hui-zhu-32bb51280/">LinkedIn</a> · <a href="https://scholar.google.com/citations?user=EmQdPZEAAAAJ&amp;hl=en">Google Scholar</a>
+      </div>
+    </header>
+
+    <section class="summary">
+      Computer Science Ph.D. researcher building <strong>multimodal vision systems and trustworthy AI methods</strong>. Published at WACV and ECAI, with hands-on experience in 2D/3D segmentation, vision-language fusion, foundation-model adaptation, and LLM privacy evaluation. Skilled at taking research from data pipeline and experiment design through multi-GPU evaluation and publication.
+    </section>
+
+    <table class="strengths" aria-label="Core strengths"><tr>
+      <td><span>Focus</span><br><strong>Computer Vision</strong></td>
+      <td><span>Specialty</span><br><strong>Multimodal Learning</strong></td>
+      <td><span>Methods</span><br><strong>Foundation Models</strong></td>
+      <td><span>Practice</span><br><strong>Reproducible ML</strong></td>
+    </tr></table>
+
+    <section>
+      <h2>Education</h2>
+      <div class="entry"><table class="entry-head"><tr>
+        <td><h3>Ph.D. in Computer Science · Wayne State University</h3><p class="subtle">Detroit, Michigan · Advisor: Prof. Dongxiao Zhu</p></td>
+        <td>Expected Jul 2028</td>
+      </tr></table></div>
+      <div class="entry"><table class="entry-head"><tr>
+        <td><h3>B.Eng. in Software Engineering · Dalian University of Technology</h3><p class="subtle">Dalian, China</p></td>
+        <td>Jul 2023</td>
+      </tr></table></div>
+    </section>
+
+    <section>
+      <h2>Research Experience</h2>
+      <div class="entry">
+        <table class="entry-head"><tr><td><h3>Graduate Research Assistant · Trustworthy AI Lab, Wayne State University</h3></td><td>Aug 2023—Present</td></tr></table>
+        <ul>
+          <li>Develop and evaluate segmentation, vision-language, and trustworthy-AI methods across clinical, microscopy, geographic, and language-model data.</li>
+          <li>Co-developed <strong>BiPVL-Seg</strong>, combining bidirectional progressive fusion with global-local contrastive alignment for end-to-end vision-language segmentation.</li>
+          <li>Co-authored <strong>MulModSeg</strong> (WACV 2025), enabling one model to learn from unpaired modalities through text conditioning and alternating training without added inference cost.</li>
+          <li>Build reproducible PyTorch/MONAI pipelines for preprocessing, augmentation, multi-GPU training, ablation studies, calibration, and model evaluation.</li>
+          <li>Collaborate across computer science, engineering, and applied research teams; translate domain problems into measurable machine-learning objectives.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <table class="entry-head"><tr><td><h3>Undergraduate Researcher · Wang Laboratory, Dalian University of Technology</h3></td><td>Sep 2022—Jul 2023</td></tr></table>
+        <ul>
+          <li>Applied deep-learning methods to experimental signal data, covering preprocessing, feature extraction, algorithm replication, and parameter studies.</li>
+          <li>Coordinated reruns and result analysis to improve experimental reliability and communicate progress to the research team.</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="footer page-break-after">Hui Zhu · Curriculum Vitae · 1 / 2</div>
+  </main>
+
+  <main class="page">
+    <section>
+      <h2>Publications &amp; Preprints · Newest First</h2>
+      <ol class="pub-list">
+        <li><span class="pub-title">Automatic Calibration for Membership Inference Attack on Large Language Models.</span><br>Saleh Zare Zade, Yao Qiang, Xiangyu Zhou, <strong>Hui Zhu</strong>, Mohammad Amin Roshani, Prashant Khanduri, Dongxiao Zhu. <span class="pub-venue">ECAI 2025.</span> <a href="https://arxiv.org/abs/2505.03392">arXiv:2505.03392</a></li>
+        <li><span class="pub-title">BiPVL-Seg: Bidirectional Progressive Vision-Language Fusion with Global-Local Alignment for Medical Image Segmentation.</span><br>Rafi Ibn Sultan, <strong>Hui Zhu</strong>, Chengyin Li, Dongxiao Zhu. <span class="pub-venue">arXiv preprint, Mar 2025.</span> <a href="https://arxiv.org/abs/2503.23534">arXiv:2503.23534</a></li>
+        <li><span class="pub-title">Mechanical Evolution of Metastatic Cancer Cells in 3D Microenvironment.</span><br>Karlin Hilai, Daniil Grubich, Marcus Akrawi, <strong>Hui Zhu</strong>, Razanne Zaghloul, Chenjun Shi, Man Do, Dongxiao Zhu, et al. <span class="pub-venue">Small, Mar 2025.</span> <a href="https://doi.org/10.1002/smll.202403242">doi:10.1002/smll.202403242</a></li>
+        <li><span class="pub-title">Longitudinal Mechanical Imaging of Metastatic Tumor Spheroids Using Brillouin Microscopy.</span><br>Karlin Hilai, Daniil Grubich, Marcus Akrawi, <strong>Hui Zhu</strong>, Razanne Zaghloul, Chenjun Shi, Man Do, Dongxiao Zhu, Jitao Zhang. <span class="pub-venue">Optical Elastography and Tissue Biomechanics XII, Mar 2025.</span> <a href="https://doi.org/10.1117/12.3043385">doi:10.1117/12.3043385</a></li>
+        <li><span class="pub-title">MulModSeg: Enhancing Unpaired Multi-Modal Medical Image Segmentation with Modality-Conditioned Text Embedding and Alternating Training.</span><br>Chengyin Li, <strong>Hui Zhu</strong>, Rafi Ibn Sultan, Hassan Bagher Ebadian, Prashant Khanduri, Chetty Indrin, Kundan Thind, Dongxiao Zhu. <span class="pub-venue">WACV 2025, pp. 3581–3591, Feb 2025.</span> <a href="https://openaccess.thecvf.com/content/WACV2025/html/Li_MulModSeg_Enhancing_Unpaired_Multi-Modal_Medical_Image_Segmentation_with_Modality-Conditioned_Text_WACV_2025_paper.html">paper</a></li>
+        <li><span class="pub-title">GeoSAM: Fine-Tuning SAM with Multi-Modal Prompts for Mobility Infrastructure Segmentation.</span><br>Rafi Ibn Sultan, Chengyin Li, <strong>Hui Zhu</strong>, Prashant Khanduri, Marco Brocanelli, Dongxiao Zhu. <span class="pub-venue">arXiv preprint, Nov 2023.</span> <a href="https://arxiv.org/abs/2311.11319">arXiv:2311.11319</a></li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Teaching &amp; Leadership</h2>
+      <div class="entry">
+        <table class="entry-head"><tr><td><h3>Teaching Assistant / Project Instructor · CSC 4996 Capstone Projects</h3></td><td>Jan 2024—Present</td></tr></table>
+        <p class="subtle">Wayne State University</p>
+        <ul>
+          <li>Guide student teams through problem definition, software architecture, implementation, milestone reviews, and final presentations.</li>
+          <li>Supported projects spanning image analysis, compliance auditing, generative audio, voice interfaces, autonomous systems, and mobile applications.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <table class="entry-head"><tr><td><h3>Algorithm Analysis Team Lead</h3></td><td>May 2022</td></tr></table>
+        <ul><li>Coordinated literature review, code reproduction, parameter studies, experiment monitoring, and team progress.</li></ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technical Toolkit</h2>
+      <table class="skill-table">
+        <tr><td>Programming</td><td>Python, C/C++, Bash, SQL, LaTeX</td></tr>
+        <tr><td>ML &amp; data</td><td>PyTorch, MONAI, Hugging Face Transformers, scikit-learn, NumPy, SciPy, pandas</td></tr>
+        <tr><td>Vision</td><td>U-Net, ResNet/CNNs, Vision Transformers, Swin-UNETR, SAM fine-tuning, vision-language and multimodal learning</td></tr>
+        <tr><td>Imaging</td><td>2D/3D segmentation, CT/MR and microscopy workflows, DICOM/NIfTI, OpenCV, scikit-image</td></tr>
+        <tr><td>Evaluation</td><td>Dice, IoU, boundary metrics, ROC/AUC, cross-validation, ablation design, calibration, uncertainty estimation</td></tr>
+        <tr><td>Engineering</td><td>Linux, Git/GitHub, Docker, CUDA, multi-GPU training, HPC scheduling, Conda, reproducible experiment tracking</td></tr>
+      </table>
+    </section>
+
+  </main>
+</body>
+</html>

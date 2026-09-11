@@ -19,3 +19,11 @@ Then open `http://localhost:8000`.
 ## Personalize before publishing
 
 - Replace `assets/Hui_Zhu_CV.pdf` whenever your CV changes.
+
+## Regenerate the CV
+
+The editable source is `cv/Hui_Zhu_CV.html`. After editing it, regenerate the downloadable PDF with:
+
+```bash
+libreoffice --headless --convert-to pdf --outdir assets cv/Hui_Zhu_CV.html
+```
